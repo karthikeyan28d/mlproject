@@ -1,13 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "mlproject"
 version = "0.1.0"
-author='karthikeyan'
-author_email='karthikeyan28101998@gmail.com'
 description = "ml project dependencies"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "catboost>=1.2.8",
+    "dill>=0.4.0",
     "flask>=3.1.0",
     "matplotlib>=3.10.1",
     "numpy>=2.2.5",
@@ -17,3 +20,9 @@ dependencies = [
     "seaborn>=0.13.2",
     "xgboost>=3.0.0",
 ]
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
