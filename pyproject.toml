@@ -1,9 +1,18 @@
 [project]
 name = "mlproject"
 version = "0.1.0"
-description = "Add your description here"
+author='karthikeyan'
+author_email='karthikeyan28101998@gmail.com'
+description = "ml project dependencies"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "catboost>=1.2.8",
+    "flask>=3.1.0",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.5",
     "pandas>=2.2.3",
+    "scikit-learn>=1.6.1",
+    "seaborn>=0.13.2",
+    "xgboost>=3.0.0",
 ]
